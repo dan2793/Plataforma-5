@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="formulario.css" type="text/css">
+</head>
+<body>
+    <h1>  Bienvenido a PetBook</h1>
+    <p>Esta es una web para registrar a sus mascotas en las redes social, para que se puedan comunicar entre ellas</p> <br>
+    <form method="post" action="https://formspree.io/xknbawae">
+        <label for="usuario"> Ingrese nombre de la mascota </label>
+        <input type="text" id="usuario" name="usuario" placeholder="Nombre">
+        <label for="edad"> Edad </label> 
+        <input type="number" id="edad" name="edad" placeholder="Edad"> 
+        <label for="fecha"> Fecha de nacimiento</label>
+        <input type="date" id="date" name="date" placeholder="Fecha de nacimiento"><br><br>
+        <label for="email"> Ingrese correo</label>
+        <input type="email" id="email" name="correo" placeholder="Email"> 
+        <label for="password"> Contraseña</label>
+        <input type="password" id="password" name="password" placeholder="Password">
+        <label>
+            Macho<input type="radio" name="genero" value="macho">
+            Hembra<input type="radio" name="genero" value="hembra">
+        </label><br><br>
+        <!--<label>
+            Perro  <input type="checkbox" name="perro" value="perro">
+            Gato  <input type="checkbox" name="gato" value="gato">
+        </label>-->
+        <label> Tipo de mascota
+        <select name="tipo_de_mascota">
+            <option value="perro">Perro</option>
+            <option value="gato">Gato</option>
+            <option value="erizo">Erizo</option>
+            <option value="cocodrilo">Cocodrilo</option>
+        </select>
+    </label> <br><br>
+    <label>
+       <a href="C:\Users\Mary\Desktop\Plataforma_5\Random\base_y_condiciones.html"> Base y Condiciones </a><br><br>
+        Aceptar<input type="checkbox" name="base_y_condiciones" value="aceptar">
+        No aceptar<input type="checkbox" name="base_y_condiciones" value="no_aceptar">
+    </label>
+        <input type="submit" value="Aceptar">
+    </form>
+</body>
+</html>
